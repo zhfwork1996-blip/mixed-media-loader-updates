@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>混合素材加载器</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Thu, 20 Aug 2026 10:27:24 +0800</pubDate>
+            <sparkle:version>10000</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# 混合素材加载器 1.0.0
+
+- 使用 Swift/AppKit 原生重写三栏工作区、素材网格和信息检查器。
+- 支持图片、视频、YouTube 与特殊格式预览。
+- 增加 Google Lens、Yandex 识图、OCR、条码识别和链接状态检测。
+- 使用 SQLite WAL 持久化标记、审核状态与备注。
+- 图片按显示尺寸降采样，视频缩略图异步生成，离屏任务自动取消。
+- 集成 Sparkle 2 + EdDSA 在线更新，关闭匿名系统信息上报。
+]]></description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.0.0/%E6%B7%B7%E5%90%88%E7%B4%A0%E6%9D%90%E5%8A%A0%E8%BD%BD%E5%99%A8-1.0.0-Apple-Silicon.zip" length="2097331" type="application/octet-stream" sparkle:edSignature="9O/kWhVh8ipvG3PFEfhBy3AyRTpkL1BUAY++oiHZMJBfLyG0rid0uBhSnDH+F2BUm/ZRjX6GG9BdMgpjcEdrDg=="/>
+        </item>
+    </channel>
+</rss>
