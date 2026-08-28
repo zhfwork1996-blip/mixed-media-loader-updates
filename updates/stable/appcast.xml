@@ -3,6 +3,24 @@
     <channel>
         <title>混合素材加载器</title>
         <item>
+            <title>1.0.1</title>
+            <pubDate>Fri, 28 Aug 2026 17:52:06 +0800</pubDate>
+            <sparkle:version>10001</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# 混合素材加载器 1.0.1
+
+- 修复视频识别后卡片与信息区没有预览图的问题。
+- 视频缩略图支持多个时间点降级取帧，元数据读取失败不再阻断预览。
+- 修复 OSS 视频和代理 URL 无法正确识别的问题，同时保持签名 URL 原样不变。
+- 大图预览改为单窗口复用，切换素材时自动更新内容。
+- 增加空格键快速预览与 Esc 关闭，并强化播放器、WebView 和加载任务的释放。
+- 完成性能回归、真实视频取帧、单窗口复用及 Apple Silicon 分发包验证。
+]]></description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.0.1/Mixed-Media-Loader-1.0.1-Apple-Silicon.zip" length="2103255" type="application/octet-stream" sparkle:edSignature="HQU7zFTvCHPr+wXHWrgPgN6ydkcjN9yIhH5iCk5UQ95pyY4yKkt4o7wLnXHVxqvP2ghKFwadmVxzHz9poEx+Aw=="/>
+        </item>
+        <item>
             <title>1.0.0</title>
             <pubDate>Thu, 20 Aug 2026 10:27:24 +0800</pubDate>
             <sparkle:version>10000</sparkle:version>
