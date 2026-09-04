@@ -3,6 +3,22 @@
     <channel>
         <title>混合素材加载器</title>
         <item>
+            <title>1.2.1</title>
+            <pubDate>Fri, 04 Sep 2026 17:23:48 +0800</pubDate>
+            <sparkle:version>10201</sparkle:version>
+            <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# 混合素材加载器 1.2.1
+
+## 更新内容
+
+- 更换全新的应用图标，并生成完整的 macOS Retina 图标尺寸。
+- 保持 1.2.0 的批量分析、流媒体兼容播放、OSS URL 探测和性能优化能力不变。
+]]></description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.2.1/Mixed-Media-Loader-1.2.1-Apple-Silicon.zip" length="16938291" type="application/octet-stream" sparkle:edSignature="21o63VlADSmOF3XIV/p74x4rEuGZ2Y59Z38WruNdb/3x9AQV8a9KTtdngfZmEvgbcenhGtcYJK08VhWLOZ4XBg=="/>
+        </item>
+        <item>
             <title>1.2.0</title>
             <pubDate>Fri, 04 Sep 2026 16:06:18 +0800</pubDate>
             <sparkle:version>10200</sparkle:version>
@@ -48,24 +64,6 @@
 - 完成 30 条真实 HLS、Apple Silicon Release、EdDSA 更新包及安装包回归验证。
 ]]></description>
             <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.1.0/Mixed-Media-Loader-1.1.0-Apple-Silicon.zip" length="2154979" type="application/octet-stream" sparkle:edSignature="RXcLDMLz5sf769dIwukK5Mc2NznXjVtCr1V9Kq3+Ps1wnOEbQC3r5kbwKEu6501CV+qXcCC+WHZNr6RhtDvgDg=="/>
-        </item>
-        <item>
-            <title>1.0.0</title>
-            <pubDate>Thu, 20 Aug 2026 10:27:24 +0800</pubDate>
-            <sparkle:version>10000</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# 混合素材加载器 1.0.0
-
-- 使用 Swift/AppKit 原生重写三栏工作区、素材网格和信息检查器。
-- 支持图片、视频、YouTube 与特殊格式预览。
-- 增加 Google Lens、Yandex 识图、OCR、条码识别和链接状态检测。
-- 使用 SQLite WAL 持久化标记、审核状态与备注。
-- 图片按显示尺寸降采样，视频缩略图异步生成，离屏任务自动取消。
-- 集成 Sparkle 2 + EdDSA 在线更新，关闭匿名系统信息上报。
-]]></description>
-            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.0.0/Mixed-Media-Loader-1.0.0-Apple-Silicon.zip" length="2097331" type="application/octet-stream" sparkle:edSignature="9O/kWhVh8ipvG3PFEfhBy3AyRTpkL1BUAY++oiHZMJBfLyG0rid0uBhSnDH+F2BUm/ZRjX6GG9BdMgpjcEdrDg=="/>
         </item>
     </channel>
 </rss>
