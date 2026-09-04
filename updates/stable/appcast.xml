@@ -3,6 +3,33 @@
     <channel>
         <title>混合素材加载器</title>
         <item>
+            <title>1.2.0</title>
+            <pubDate>Fri, 04 Sep 2026 16:06:18 +0800</pubDate>
+            <sparkle:version>10200</sparkle:version>
+            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# 混合素材加载器 1.2.0
+
+## 重点更新
+
+- 大幅减少侧栏筛选、搜索和素材卡片更新时的重复计算与重载。
+- 批量分析扩展到图片和视频，支持时长、精确大小、宽度、高度、帧率及任意/全部组合条件。
+- 增强 MP4/MOV、HLS、OSS 代理 URL 和流式媒体元数据解析。
+- 内置 LGPL 版 MPVKit、mpv 和 FFmpeg；系统播放器失败时可自动切换兼容模式。
+- 新增 User-Agent、Referer 和临时 Cookie 网络访问设置。
+- 卡片和信息面板显示精确大小、估算大小、编码、容器、码率、直播状态和探测来源。
+- 保留原始签名 URL，不改写查询参数；旧版本数据库可直接升级使用。
+
+## 使用提示
+
+- 视频预览窗口顶部可手动切换“系统播放器 / 兼容模式”。
+- 需要来源校验或登录态时，在“工具 -> 网络访问设置”中填写请求头。
+- 流媒体估算大小不会当作精确大小参与筛选，缺失字段归入“无法判定”。
+]]></description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.2.0/Mixed-Media-Loader-1.2.0-Apple-Silicon.zip" length="17270348" type="application/octet-stream" sparkle:edSignature="6i/bWC11gcTUubRS5yC7rf41MSg81YqK3s7UMknOTuajIF0scm2xYaKauGHnlALrIvj0N2H5Cr5Js30EK8JhDg=="/>
+        </item>
+        <item>
             <title>1.1.0</title>
             <pubDate>Tue, 01 Sep 2026 12:11:53 +0800</pubDate>
             <sparkle:version>10100</sparkle:version>
