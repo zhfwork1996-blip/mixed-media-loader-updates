@@ -3,6 +3,33 @@
     <channel>
         <title>混合素材加载器</title>
         <item>
+            <title>1.3.0</title>
+            <pubDate>Mon, 07 Sep 2026 15:32:39 +0800</pubDate>
+            <sparkle:version>10300</sparkle:version>
+            <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# 混合素材加载器 1.3.0
+
+## 重点更新
+
+- 大幅减少大量素材缩略图加载时的主线程全量重算，优化侧栏计数、卡片刷新和滚动流畅度。
+- 批量素材分析升级为图片/视频通用工作流，可独立选择媒体属性、链接可访问性、画面 OCR/条码分析。
+- 通用筛选支持精确大小、宽度和高度；视频继续支持时长和帧率，并可选择“满足任一”或“满足全部”。
+- 链接检测支持 HTTP 状态、跳转地址、响应耗时和文件大小，重复 URL 只请求一次并同步回填全部素材。
+- 修复链接响应缺少 Content-Length 时清空已有准确文件大小的问题，提升 HLS、OSS 和 CDN 链接的数据可靠性。
+- 批量分析增加确定型进度条和快速取消，停止后保留已经完成的结果。
+- 增加缩略图淡入、拖拽反馈、卡片及侧栏状态动画，并遵循系统“减少动态效果”设置。
+- 重新制作符合 macOS 风格的圆角应用图标，保留原有便便主体并改善透明边缘、小尺寸清晰度和视觉层次。
+
+## 兼容性
+
+- 仅支持 Apple Silicon Mac，最低 macOS 13。
+- 内部分发版本继续使用 ad-hoc 签名；首次安装如被系统拦截，请在系统设置的“隐私与安全性”中允许打开。
+]]></description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.3.0/Mixed-Media-Loader-1.3.0-Apple-Silicon.zip" length="17065244" type="application/octet-stream" sparkle:edSignature="0GQQmAfL0CJ7DGzjXXWoClR80GixbDZ2MHkeC9zvPo+TelLKHDKOxy24X+mUzBw4evr5mq0F1nmHbW+c3PzzDg=="/>
+        </item>
+        <item>
             <title>1.2.1</title>
             <pubDate>Fri, 04 Sep 2026 17:23:48 +0800</pubDate>
             <sparkle:version>10201</sparkle:version>
@@ -44,26 +71,6 @@
 - 流媒体估算大小不会当作精确大小参与筛选，缺失字段归入“无法判定”。
 ]]></description>
             <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.2.0/Mixed-Media-Loader-1.2.0-Apple-Silicon.zip" length="17270348" type="application/octet-stream" sparkle:edSignature="6i/bWC11gcTUubRS5yC7rf41MSg81YqK3s7UMknOTuajIF0scm2xYaKauGHnlALrIvj0N2H5Cr5Js30EK8JhDg=="/>
-        </item>
-        <item>
-            <title>1.1.0</title>
-            <pubDate>Tue, 01 Sep 2026 12:11:53 +0800</pubDate>
-            <sparkle:version>10100</sparkle:version>
-            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# 混合素材加载器 1.1.0
-
-- 修复大量 HLS 视频只显示占位图、信息面板不更新的问题；元数据读取和画面生成彻底解耦，单条异常链接不会阻塞整个预览队列。
-- HLS 增加播放器取帧兜底、缓冲等待、15 秒画面超时、8 秒元数据超时、并发限制、取消和缓存复用。
-- 修复 OSS 视频及代理 URL 的类型识别，同时保持原始签名 URL 字节不变。
-- 新增批量视频大小检测：支持自定义阈值、最多 4 路并发、停止检测、按 URL 去重，以及“过大视频”“大小未知”筛选。
-- HLS 清单不再被误判为几百字节的视频文件；仅读取响应头或 1 字节 Range，不下载完整视频。
-- 大图和视频预览改为单窗口复用，支持空格键打开、Esc 关闭及素材间快速切换。
-- 首次启动自动选中第一项；信息面板增量刷新，不再因元数据更新重复启动预览。
-- 完成 30 条真实 HLS、Apple Silicon Release、EdDSA 更新包及安装包回归验证。
-]]></description>
-            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.1.0/Mixed-Media-Loader-1.1.0-Apple-Silicon.zip" length="2154979" type="application/octet-stream" sparkle:edSignature="RXcLDMLz5sf769dIwukK5Mc2NznXjVtCr1V9Kq3+Ps1wnOEbQC3r5kbwKEu6501CV+qXcCC+WHZNr6RhtDvgDg=="/>
         </item>
     </channel>
 </rss>
