@@ -1,7 +1,28 @@
-<?xml version="1.0" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>混合素材加载器</title>
+        <item>
+            <title>1.4.0</title>
+            <pubDate>Thu, 10 Sep 2026 11:34:05 +0800</pubDate>
+            <sparkle:version>10400</sparkle:version>
+            <sparkle:shortVersionString>1.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"># 混合素材加载器 1.4.0
+
+- 新增分析工作台：自定义范围、检测任务、条件和保存方案，点击结果分类定位链接异常，支持重试、标注及导出。
+- 素材卡片新增「中杯、大杯、超大杯、一大坨」四档尺寸及连续调整，默认超大杯。
+- 取消固定右侧详情栏，预览在主窗口展开，详情与备注放到底部；保留独立窗口和全屏，退出定位到最后观看的素材。
+- 单击选择，双击或空格预览，支持批量选择；标签库可自定义名称、颜色、分组和组内单选，支持批量应用、撤销及侧栏固定。
+- 可见 GIF、APNG、动态 WebP 卡片直接播放，离屏暂停；增加音频卡片和播放入口，完善视频兼容取帧。
+- 改进取消、限并发、缓存和后台导出；修复失败检测覆盖已知属性、源尺寸混淆及搜索清除后筛选残留等问题。
+- 保留原始签名 URL、重复素材及旧分类/审核原字段；旧标记迁移到可编辑的历史标签组，迁移前自动备份。
+
+仅支持 Apple Silicon、macOS 13 及以上。继续采用内部 ad-hoc 签名。格式能力取决于系统和内置解码器，不保证所有编码变体；本轮实测常见静态图片、GIF/APNG/WebP 动图、H.264 MP4 和 WAV。首次启动会迁移标签数据；请勿同时运行不同版本编辑同一素材库。
+</description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.4.0/Mixed-Media-Loader-1.4.0-Apple-Silicon.zip" length="17340820" type="application/octet-stream" sparkle:edSignature="ibq0k1fVlJKS6xz6cM1cP1BLtv9PnH6Bd5jxPTbuhoJcu228AXPfNBN+iivwSYehTi28nHktMdYmLOtGE5s/Dw==" />
+        </item>
         <item>
             <title>1.3.0</title>
             <pubDate>Mon, 07 Sep 2026 15:32:39 +0800</pubDate>
@@ -9,7 +30,7 @@
             <sparkle:shortVersionString>1.3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# 混合素材加载器 1.3.0
+            <description sparkle:format="markdown"># 混合素材加载器 1.3.0
 
 ## 重点更新
 
@@ -26,8 +47,8 @@
 
 - 仅支持 Apple Silicon Mac，最低 macOS 13。
 - 内部分发版本继续使用 ad-hoc 签名；首次安装如被系统拦截，请在系统设置的“隐私与安全性”中允许打开。
-]]></description>
-            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.3.0/Mixed-Media-Loader-1.3.0-Apple-Silicon.zip" length="17065244" type="application/octet-stream" sparkle:edSignature="0GQQmAfL0CJ7DGzjXXWoClR80GixbDZ2MHkeC9zvPo+TelLKHDKOxy24X+mUzBw4evr5mq0F1nmHbW+c3PzzDg=="/>
+</description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.3.0/Mixed-Media-Loader-1.3.0-Apple-Silicon.zip" length="17065244" type="application/octet-stream" sparkle:edSignature="0GQQmAfL0CJ7DGzjXXWoClR80GixbDZ2MHkeC9zvPo+TelLKHDKOxy24X+mUzBw4evr5mq0F1nmHbW+c3PzzDg==" />
         </item>
         <item>
             <title>1.2.1</title>
@@ -36,41 +57,14 @@
             <sparkle:shortVersionString>1.2.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# 混合素材加载器 1.2.1
+            <description sparkle:format="markdown"># 混合素材加载器 1.2.1
 
 ## 更新内容
 
 - 更换全新的应用图标，并生成完整的 macOS Retina 图标尺寸。
 - 保持 1.2.0 的批量分析、流媒体兼容播放、OSS URL 探测和性能优化能力不变。
-]]></description>
-            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.2.1/Mixed-Media-Loader-1.2.1-Apple-Silicon.zip" length="16938291" type="application/octet-stream" sparkle:edSignature="21o63VlADSmOF3XIV/p74x4rEuGZ2Y59Z38WruNdb/3x9AQV8a9KTtdngfZmEvgbcenhGtcYJK08VhWLOZ4XBg=="/>
-        </item>
-        <item>
-            <title>1.2.0</title>
-            <pubDate>Fri, 04 Sep 2026 16:06:18 +0800</pubDate>
-            <sparkle:version>10200</sparkle:version>
-            <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# 混合素材加载器 1.2.0
-
-## 重点更新
-
-- 大幅减少侧栏筛选、搜索和素材卡片更新时的重复计算与重载。
-- 批量分析扩展到图片和视频，支持时长、精确大小、宽度、高度、帧率及任意/全部组合条件。
-- 增强 MP4/MOV、HLS、OSS 代理 URL 和流式媒体元数据解析。
-- 内置 LGPL 版 MPVKit、mpv 和 FFmpeg；系统播放器失败时可自动切换兼容模式。
-- 新增 User-Agent、Referer 和临时 Cookie 网络访问设置。
-- 卡片和信息面板显示精确大小、估算大小、编码、容器、码率、直播状态和探测来源。
-- 保留原始签名 URL，不改写查询参数；旧版本数据库可直接升级使用。
-
-## 使用提示
-
-- 视频预览窗口顶部可手动切换“系统播放器 / 兼容模式”。
-- 需要来源校验或登录态时，在“工具 -> 网络访问设置”中填写请求头。
-- 流媒体估算大小不会当作精确大小参与筛选，缺失字段归入“无法判定”。
-]]></description>
-            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.2.0/Mixed-Media-Loader-1.2.0-Apple-Silicon.zip" length="17270348" type="application/octet-stream" sparkle:edSignature="6i/bWC11gcTUubRS5yC7rf41MSg81YqK3s7UMknOTuajIF0scm2xYaKauGHnlALrIvj0N2H5Cr5Js30EK8JhDg=="/>
+</description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.2.1/Mixed-Media-Loader-1.2.1-Apple-Silicon.zip" length="16938291" type="application/octet-stream" sparkle:edSignature="21o63VlADSmOF3XIV/p74x4rEuGZ2Y59Z38WruNdb/3x9AQV8a9KTtdngfZmEvgbcenhGtcYJK08VhWLOZ4XBg==" />
         </item>
     </channel>
 </rss>
