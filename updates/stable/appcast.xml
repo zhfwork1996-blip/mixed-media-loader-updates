@@ -3,6 +3,26 @@
     <channel>
         <title>混合素材加载器</title>
         <item>
+            <title>1.4.1</title>
+            <pubDate>Wed, 16 Sep 2026 14:56:31 +0800</pubDate>
+            <sparkle:version>10401</sparkle:version>
+            <sparkle:shortVersionString>1.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"># 混合素材加载器 1.4.1
+
+- 修复图片加载取消时的网络会话竞态，避免在 macOS 27 及旧系统上触发闪退。
+- 修复大图旋转、镜像、恢复视图的黑屏问题，改善主窗口与独立预览窗口的画布布局和 100% 显示。
+- 图片卡片及大图预览新增右键“复制图片”，可粘贴到支持图片的应用；保留原有复制链接功能。
+- 图片复制在后台编码，后发复制优先，避免等待网络时覆盖用户新复制的内容。
+
+复制图片沿用预览大小限制（编码源 64 MiB、长边 8192 px）；GIF 等动图复制为静态首帧，浏览时的旋转/镜像不修改原图。保留原始签名 URL 和已有素材数据。
+
+仅支持 Apple Silicon，最低 macOS 13，继续采用内部 ad-hoc 签名。本机 macOS 27 已验证已定位闪退的修复及主要图片操作；长期业务压力与最终全屏组合仍需持续验证。
+</description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.4.1/Mixed-Media-Loader-1.4.1-Apple-Silicon.zip" length="17099674" type="application/octet-stream" sparkle:edSignature="TJE1MkTSC3pJXGPU6tEX93GZXQobOMK4wbdibi3gtbbQyRWnHFWL6UAoRJXqwx2pu3YA4QaNdMBHs6zfQV7CBg==" />
+        </item>
+        <item>
             <title>1.4.0</title>
             <pubDate>Thu, 10 Sep 2026 11:34:05 +0800</pubDate>
             <sparkle:version>10400</sparkle:version>
