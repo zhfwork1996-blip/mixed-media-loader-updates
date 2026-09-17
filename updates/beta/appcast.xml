@@ -3,6 +3,31 @@
     <channel>
         <title>混合素材加载器</title>
         <item>
+            <title>1.5.0</title>
+            <pubDate>Thu, 17 Sep 2026 11:36:18 +0800</pubDate>
+            <sparkle:version>10500</sparkle:version>
+            <sparkle:shortVersionString>1.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <sparkle:channel>beta</sparkle:channel>
+            <description sparkle:format="markdown"># 混合素材加载器 1.5.0
+
+本次更新增加幻影坦克检测和黑白对照，整理素材浏览与分析布局，并包含 macOS 27 大图底部详情按钮背景修复。
+
+- **幻影坦克检测**：支持单图、批量检测、结果筛选及人工确认，卡片可直接进入对照。分析原始透明图片，后台限流执行；动图最多抽样 3 帧。结果表示“疑似”，可能误报或漏报，适用于透明度产生黑白背景差异的常见幻影图。
+- **大图对照**：黑底、白底、棋盘格及黑白双栏对照，联动缩放、位置、旋转和镜像。底部“详情 / 备注”固定显示，展开区域可拖动调整高度。
+- **复制图片**：保留右键复制透明图片，新增合成黑底或白底复制；复制结果为静态图，合成副本长边上限 4096 px。
+- **更紧凑的原生布局**：精简侧栏和卡片常规信息，多选时提供批量操作。分析工作台整合到主窗口，高级参数按需展开。
+- **卡片尺寸预览**：保留“中杯 / 大杯 / 超大杯 / 一大坨”和自定义大小，增加直观尺寸示意。
+- **性能优化**：减少筛选中的元数据复制和临时数组；不引入第三方 UI 框架，优先保证稳定与响应速度。
+
+保留现有素材功能、标签、备注和签名 URL 原文。适用于 Apple Silicon，macOS 13 及以上。
+
+验证：89 项自动测试通过，补充 6 项对照工作流检查通过，Release 安装包和更新签名已验证。最终 Release 的完整实机交互验收尚未补齐；检测准确率及界面帧率未做真实素材集量化。本包沿用现有 ad hoc 应用签名，未做 Developer ID 公证。
+</description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.5.0/Mixed-Media-Loader-1.5.0-Apple-Silicon.zip" length="17190754" type="application/octet-stream" sparkle:edSignature="u5Ztiyk+8Zhbu0WM4RLTwitDmW+jvzq08rkRMDMVNVhryPVz/oGt5KMGhNhgwuO0B//OmipJUuYK+VtfBdOOAA==" />
+        </item>
+        <item>
             <title>1.4.1</title>
             <pubDate>Wed, 16 Sep 2026 14:56:31 +0800</pubDate>
             <sparkle:version>10401</sparkle:version>
