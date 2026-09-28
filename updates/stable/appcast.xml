@@ -3,6 +3,30 @@
     <channel>
         <title>混合素材加载器</title>
         <item>
+            <title>1.5.1</title>
+            <pubDate>Mon, 28 Sep 2026 10:59:54 +0800</pubDate>
+            <sparkle:version>10501</sparkle:version>
+            <sparkle:shortVersionString>1.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"># 混合素材加载器 1.5.1
+
+修复大图展开详情时的预览空白问题，新增分析报告导出，并重新整理分析工作台流程。
+
+- **大图详情更稳定**：修复放大、平移后展开详情导致查看位置落到空白区域的问题；黑白对照同步保留位置。
+- **放大保持清晰**：修复“100%”和放大操作可能加载较小预览的问题，按实际显示尺寸获取清晰图片，避免不必要的重复解码。
+- **更直观的分析工作台**：分为“设置检测”和“结果与报告”。开始后直接显示进度，完成后展示状态统计，点击结果数量即可查看对应素材。
+- **分析报告导出**：完成或停止后生成本次检测快照，可保存离线 HTML 报告和全量 CSV 明细，包含任务设置、状态、异常说明及原始 URL。网页明细最多显示前 500 项，摘要统计覆盖全量；全部明细请导出 CSV。关闭应用前请保存报告。
+- **修复分析遗漏与状态问题**：重复 URL 按各项所需任务合并，修复“只补缺失”漏检；退出时保存已取消状态；结果跳转清除残留搜索条件。
+- **增强异常媒体稳定性**：修复极大 HLS 码率、时长及异常时长显示可能引发的整数溢出闪退。
+
+保留现有素材、标签、备注、人工确认及签名 URL 原文。适用于 Apple Silicon，macOS 13 及以上。
+
+验证：123 项自动测试通过；隔离测试应用完成详情切换、放大、结果跳转及 HTML / CSV 实际保存验收。Release 安装包通过架构、版本和嵌套签名检查。沿用现有 ad hoc 应用签名，未做 Developer ID 公证。
+</description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.5.1/Mixed-Media-Loader-1.5.1-Apple-Silicon.zip" length="17273124" type="application/octet-stream" sparkle:edSignature="hiP/AxSB29ucVSrUeAgdf6D7Q2GsbY5LLT//Ou0YCkpLY3v37kuuT38GhcH3SROcdcUfPtpvoe89vBwyVqolCA==" />
+        </item>
+        <item>
             <title>1.5.0</title>
             <pubDate>Thu, 17 Sep 2026 11:36:18 +0800</pubDate>
             <sparkle:version>10500</sparkle:version>
