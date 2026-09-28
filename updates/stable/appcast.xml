@@ -3,6 +3,26 @@
     <channel>
         <title>混合素材加载器</title>
         <item>
+            <title>1.5.2</title>
+            <pubDate>Mon, 28 Sep 2026 13:22:11 +0800</pubDate>
+            <sparkle:version>10502</sparkle:version>
+            <sparkle:shortVersionString>1.5.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"># 混合素材加载器 1.5.2
+
+修复 1.5.1 中仍存在的“大图点击详情后图片消失”问题。
+
+- **详情展开后图片保持可见**：修正详情背景越界绘制，避免覆盖上方图片及工具栏。该问题在 macOS 27 的正式版上复现，无需先放大或平移。
+- **修复范围集中**：保留现有图片加载、缩放、动画、标签、备注、分析报告及签名 URL 原文；共用背景视图只在自身边界内绘制。
+
+验证：125 项自动测试通过，新增绘制回归在旧代码上产生 8 次覆盖断言失败、修复后通过。使用最终 Release 构建的隔离测试应用完成详情开关、放大、全屏以及详情展开时切换图片的实机验收。
+
+适用于 Apple Silicon，macOS 13 及以上。沿用现有 ad hoc 应用签名，未做 Developer ID 公证。
+</description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.5.2/Mixed-Media-Loader-1.5.2-Apple-Silicon.zip" length="17273318" type="application/octet-stream" sparkle:edSignature="Y/rjJfj2yBWpY6wWctglR5Nbyq4xUUc+WJUAibb3wXuzYjPbo+KxTgff0iYWrXeRGsVt4SkOBUYRoffmFApYBw==" />
+        </item>
+        <item>
             <title>1.5.1</title>
             <pubDate>Mon, 28 Sep 2026 10:59:54 +0800</pubDate>
             <sparkle:version>10501</sparkle:version>
