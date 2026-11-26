@@ -3,6 +3,23 @@
     <channel>
         <title>混合素材加载器</title>
         <item>
+            <title>1.7.0</title>
+            <pubDate>Thu, 26 Nov 2026 15:43:32 +0800</pubDate>
+            <sparkle:version>10700</sparkle:version>
+            <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[本版支持 Apple Silicon Mac，最低 macOS 13。
+
+- 素材库采用三栏布局。选中卡片即可在右侧查看属性、标签及备注。
+- 在「管理标签库 → 打标快捷键」绑定三个标签，即可用 ⌘1、⌘2、⌘3 给选中图片或当前大图打标。⌘Z 撤销，T 打开完整标签面板。
+- 分析结果可按异常原因筛选并单独重试。表格导入可预览实际 URL 和标签。
+- 改进大图 100% 查看、缩略图滚动与交互动画，并适配系统「减少动态效果」。
+
+已有用户可在应用菜单中选择「检查更新…」。首次安装请下载 DMG，将 App 拖入「应用程序」。]]></description>
+            <enclosure url="https://github.com/zhfwork1996-blip/mixed-media-loader-updates/releases/download/v1.7.0/Mixed-Media-Loader-1.7.0-Apple-Silicon.zip" length="17529684" type="application/octet-stream" sparkle:edSignature="nd0CUG9p+k7wlA3hT9SLgQdtXSUmnFwXJtMmDhgyfWe52NgR1QkJWaipM4JgESB63QC2AKKDpQVY88MT7LjOBQ=="/>
+        </item>
+        <item>
             <title>1.5.2</title>
             <pubDate>Mon, 28 Sep 2026 13:22:11 +0800</pubDate>
             <sparkle:version>10502</sparkle:version>
